@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+:root {
+  --color-primary: #c97a1d;
+  --color-secondary: #ffffff;
+  --color-tertiary: #3a2b1a;
+  --color-quaternary: #181818;
+  --color-quinary: #FFC043;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-quaternary: var(--color-quaternary);
+  --color-quinary: var(--color-quinary);
+}
