@@ -35,13 +35,13 @@ const products = [
 
 export default function Home() {
   return (
-    <div className='min-h-dvh  transition-colors duration-300'>
+    <div className='min-h-svh  transition-colors duration-300'>
       <Header />
 
-      <div className='absolute inset-0 w-full h-dvh top-0  left-0 -z-10'>
+      <div className='absolute inset-0 w-full h-svh top-0  left-0 -z-10'>
         {/* Gradient mask for smooth transition */}
-        <div className='absolute inset-0 w-full h-dvh top-0 left-0 z-20 bg-gradient-to-b from-transparent via-transparent to-quaternary'></div>
-        <div className='absolute inset-0 w-full h-dvh top-0  left-0 z-10 bg-tertiary/60'></div>
+        <div className='absolute inset-0 w-full h-svh top-0 left-0 z-20 bg-gradient-to-b from-transparent via-transparent to-quaternary'></div>
+        <div className='absolute inset-0 w-full h-svh top-0  left-0 z-10 bg-tertiary/60'></div>
         <video
           autoPlay
           loop
@@ -54,7 +54,7 @@ export default function Home() {
         </video>
       </div>
       {/* Hero Section */}
-      <section className='relative min-h-dvh h-full flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 py-8 md:py-12 lg:py-20 max-w-7xl mx-auto overflow-hidden'>
+      <section className='relative min-h-svh h-full flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 py-8 md:py-12 lg:py-20 max-w-7xl mx-auto overflow-hidden'>
         {/* Background Video */}
 
         {/* Left */}
