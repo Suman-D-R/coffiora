@@ -27,7 +27,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className='flex z-50 items-center justify-between px-4 sm:px-6 md:px-8 py-3 sm:py-4 border-b border-black/5 dark:border-white/10'>
+    <header className='flex z-50 w-full items-center justify-between px-4 sm:px-6 md:px-8 py-3 sm:py-4 border-b border-black/5 dark:border-white/10'>
       <div className='flex items-center gap-2'>
         <IconCoffee size={24} className='sm:w-7 sm:h-7' />
         <span className='font-bold text-lg sm:text-xl tracking-tight font-sans'>
@@ -44,23 +44,19 @@ export default function Header() {
         ))}
       </nav>
 
-      {/* Mobile Menu Button */}
-      <button
-        className='md:hidden p-2 text-secondary'
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        {isMenuOpen ? <IconX size={24} /> : <IconMenu2 size={24} />}
-      </button>
-
       {/* Desktop Order Button */}
       <button className='hidden sm:flex items-center gap-2 bg-[#C97A1D] text-white font-semibold px-4 sm:px-5 py-2 rounded-full shadow hover:bg-[#a05e16] transition text-sm sm:text-base'>
         <IconTruck size={18} className='sm:w-5 sm:h-5' /> Order Now
       </button>
 
-      {/* Mobile Order Button */}
-      <button className='sm:hidden flex items-center gap-1 bg-[#C97A1D] text-white font-semibold px-3 py-2 rounded-full shadow hover:bg-[#a05e16] transition text-sm'>
-        <IconTruck size={16} /> Order
-      </button>
+      <div className='flex md:hidden items-center gap-2'>
+        <button
+          className=' p-2 text-secondary'
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <IconX size={24} /> : <IconMenu2 size={24} />}
+        </button>
+      </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
