@@ -411,7 +411,7 @@ export default function Home() {
               placeholder='Enter your email address'
               className='flex-1 px-4 py-3 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#232323] text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-quinary'
             />
-            <button className='bg-quinary text-white font-semibold px-6 py-3 rounded-full hover:bg-[#a05e16] transition'>
+            <button className='bg-primary text-white font-semibold px-6 py-3 rounded-full hover:bg-[#a05e16] transition'>
               Subscribe
             </button>
           </div>
